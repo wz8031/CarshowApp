@@ -4,10 +4,10 @@ import StyleButton from "../Button"
 import styles from './style';
 
 const CarItem = (props) => {
-    const{cartitle}=props; 
-    const{carsubtitle}=props; 
-    const{price}=props;
-    const{image}=props;
+    const{cartitle}=props.car; 
+    const{carsubtitle}=props.car; 
+    const{price}=props.car;
+    const{image}=props.car;
     return (
         <View style={styles.carContainer}>
 
