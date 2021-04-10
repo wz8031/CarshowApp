@@ -41,6 +41,10 @@ const styles = StyleSheet.create({
 
     },
 
+    underline:{
+      textDecorationLine: 'underline'
+    }
+
 });
 
 export default styles;

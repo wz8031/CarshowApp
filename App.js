@@ -7,7 +7,7 @@ export default function App() {
   return (
     <View style={styles.container}>
 
-      <CarItem cartitle="Model S"  carsubtitle="Starting at" price="$500"/>
+      <CarItem cartitle="Modeld S"  carsubtitle="Startting at" price="$500" image={ require('./assets/ModelX.jpeg')}/>
      
       <StatusBar style="auto" />
     </View>

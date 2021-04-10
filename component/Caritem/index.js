@@ -7,17 +7,18 @@ const CarItem = (props) => {
     const{cartitle}=props; 
     const{carsubtitle}=props; 
     const{price}=props;
+    const{image}=props;
     return (
         <View style={styles.carContainer}>
 
             <ImageBackground
-                source={require('../../assets/ModelX.jpeg')}
+                source={image}
                 style={styles.image}
             />
 
             <View style={styles.titles}>
                 <Text style={styles.title}> {cartitle}</Text>
-                <Text style={styles.subtitle}>{carsubtitle}<Text>{" "}</Text>{price}</Text>
+                <Text style={styles.subtitle}>{carsubtitle}<Text>{" "}</Text><Text style={styles.underline}>{price}</Text></Text>
             </View>
 
             <View  style={styles.allButton}>
