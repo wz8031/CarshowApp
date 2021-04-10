@@ -3,7 +3,10 @@ import { Text, View,ImageBackground, Button } from 'react-native';
 import StyleButton from "../Button"
 import styles from './style';
 
-const CarItem = () => {
+const CarItem = (props) => {
+    const{cartitle}=props; 
+    const{carsubtitle}=props; 
+    const{price}=props;
     return (
         <View style={styles.carContainer}>
 
@@ -13,11 +16,13 @@ const CarItem = () => {
             />
 
             <View style={styles.titles}>
-                <Text style={styles.title}>Model S</Text>
-                <Text style={styles.subtitle}>Starting at $4534534</Text>
+                <Text style={styles.title}> {cartitle}</Text>
+                <Text style={styles.subtitle}>{carsubtitle}<Text>{" "}</Text>{price}</Text>
             </View>
 
-            <StyleButton type="primary" content="Customf Order" onPress={() => {
+            <View  style={styles.allButton}>
+
+            <StyleButton type="primary" content="Custom Order" onPress={() => {
                 console.warn("Primary button is press");
             }
             } />
@@ -26,6 +31,9 @@ const CarItem = () => {
                 console.warn("Exsiting button is press");
             }
             } />
+            </View>
+
+            
 
         </View>
     );

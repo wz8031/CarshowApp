@@ -30,7 +30,16 @@ const styles = StyleSheet.create({
         height:'100%',
         resizeMode:'cover',
         position:'absolute'
-      }
+      },
+
+      allButton:{
+        top:440,
+        width:'100%',
+        flex:1,
+        // padding: '10',
+        
+
+    },
 
 });
 

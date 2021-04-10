@@ -7,7 +7,7 @@ export default function App() {
   return (
     <View style={styles.container}>
 
-      <CarItem />
+      <CarItem cartitle="Model S"  carsubtitle="Starting at" price="$500"/>
      
       <StatusBar style="auto" />
     </View>
